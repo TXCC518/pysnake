@@ -1,0 +1,63 @@
+import pygame
+
+# 颜色设定
+BLACK = 0, 0, 0
+DARK_GREY = 33, 33, 33
+BACKGROUND_COLOR = BLACK
+GRID_COLOR = DARK_GREY
+WHITE = 255, 255, 255
+APPLE_COLOR_SKIN = 33, 255, 33
+APPLE_COLOR_BODY = 255, 66, 66
+GREY = 127, 127, 127
+LIGHT_GREY = 192, 192, 192
+
+
+# 按键设定
+KEY_EXIT = pygame.K_ESCAPE  # Esc健
+# 上下左右移动键
+KEY_UP = pygame.K_w
+KEY_DOWN = pygame.K_s
+KEY_LEFT = pygame.K_a
+KEY_RIGHT = pygame.K_d
+# R重生键
+KEY_RESTART = pygame.K_r
+# P暂停键
+KEY_PAUSE = pygame.K_p
+
+# 一般设定
+GAME_NAME = 'PySnake'
+# 游戏窗口尺寸
+SCREEN_SIZE = SCREEN_WIDTH, SCREEN_HEIGHT = (640, 480)
+# 每个方格大小
+CELL_SIZE = 20
+# 行数、列数
+COLUMNS, ROWS = SCREEN_WIDTH // CELL_SIZE, SCREEN_HEIGHT // CELL_SIZE
+DISPLAY_MODE = pygame.HWSURFACE | pygame.DOUBLEBUF
+# 主循环速度
+LOOP_SPEED = 60
+# 字体文件
+FONT_NAME = 'resources/Minecraft.ttf'
+FONT_SIZE = 16
+# 图标文件
+ICON = 'resources/icon.png'
+UP, DOWN, LEFT, RIGHT = ((0, -1), (0, 1), (-1, 0), (1, 0))
+OUT = -1
+
+# 蛇的默认参数
+SNAKE_COLOR_SKIN = 33, 255,33
+SNAKE_COLOR_BODY = 33, 192, 33
+SNAKE_COLOR_HEAD = 192, 192, 33
+# 蛇死亡之后的颜色
+SNAKE_COLOR_SKIN_DEAD = LIGHT_GREY
+SNAKE_COLOR_BODY_DEAD = GREY
+SNAKE_COLOR_HEAD_DEAD = DARK_GREY
+# 初始位置
+SNAKE_X = 0
+SNAKE_Y = 0
+# 初始蛇身长度
+SNAKE_BODY_LENGTH = 5
+# 蛇的初始运行方向
+SNAKE_DIRECTION = RIGHT
+# 蛇的运行速度
+SNAKE_SPEED = 5
+SNAKE_LIVE = 100
